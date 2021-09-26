@@ -13,8 +13,8 @@ footer {
 
 header,
 footer {
-  background-color: navy;
-  color: white;
+  background-color: yellow;
+  color: black;
   text-align: center;
   font-family: "Shadows Into Light", cursive;
 }
@@ -24,7 +24,7 @@ header {
 }
 
 #currentdate {
-  color: yellow;
+  color: blue;
 }
 
 img {
