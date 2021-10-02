@@ -5,7 +5,8 @@ img {
 }
 
 .pic1,
-.pic2 {
+.pic2,
+.colortype {
   width: 350px;
   height: auto;
 }
@@ -18,7 +19,7 @@ body {
 /* phone or baseline views **************************/
 header,
 footer {
-  background-color: #bed;
+  background-color: #83bcff;
   display: flex;
   flex-flow: column;
   align-items: center;
