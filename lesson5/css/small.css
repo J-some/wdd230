@@ -4,6 +4,12 @@ img {
   margin: 0.5rem;
 }
 
+.banne {
+  background-color: rgb(237, 240, 52);
+  margin: 1em 2em;
+  padding: 1em;
+}
+
 .information {
   background-color: rgba(240, 240, 240, 0.8);
   margin: 1em 2em;
