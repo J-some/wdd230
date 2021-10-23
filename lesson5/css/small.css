@@ -4,6 +4,11 @@ img {
   margin: 0.5rem;
 }
 
+.social-icon {
+  width: 50px;
+  height: auto;
+}
+
 .banne {
   background-color: rgb(237, 240, 52);
   margin: 1em 2em;
@@ -11,38 +16,52 @@ img {
 }
 
 .information {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: rgba(240, 240, 240, 0.8);
   margin: 1em 2em;
   padding: 1em;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .tablet-map {
-  width: 350px;
+  width: 250px;
   height: auto;
-  grid-column: 3/4;
 }
 
-.title-infomation {
-  grid-column: 1/2;
+.contact-infomation {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .article-position {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: rgba(240, 240, 240, 0.8);
   margin: 1em 2em;
   padding: 1em;
 }
 
-.article-text {
+.article-title {
   grid-column: 1;
   grid-row: 1;
+}
+.article-author {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.article-text {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .article {
   width: 250px;
   height: auto;
   grid-column: 1;
+  grid-row: 4;
 }
 
 body {
@@ -62,7 +81,7 @@ ul li {
 .action {
   display: grid;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 3;
   background-color: rgba(240, 240, 240, 0.8);
   margin: 1em 2em;
   padding: 1em;
@@ -89,7 +108,7 @@ footer {
   display: grid;
   grid-column: 1;
   grid-row: 1;
-  width: 450px;
+  width: 350px;
   height: auto;
 }
 
@@ -136,6 +155,11 @@ nav a:hover {
           color: #36454f; */
   --d: 75%;
 }
+
+nav ul li.active a {
+  background-color: rgb(230, 215, 8);
+}
+
 .active {
   color: white;
 }
@@ -145,119 +169,5 @@ nav ul.hide {
 }
 
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
-  nav button {
-    display: none;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  nav ul {
-    display: flex;
-  }
-  nav ul li {
-    flex: 1 1 100%;
-  }
 
-  nav a {
-    font-size: 1rem;
-  }
-
-  nav ul.hide {
-    display: flex;
-  }
-
-  .pic1 {
-    width: 700px;
-    height: auto;
-  }
-
-  .flex {
-    display: flex;
-    /* flex-direction: row; */
-    /* let us combine row and wrap with flow */
-    flex-flow: row wrap;
-  }
-
-  .flex-col {
-    display: block;
-    flex: 1 1 auto;
-    background-color: #bed;
-  }
-  .flex-col,
-  .column-col,
-  .grid-col {
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #333;
-    text-align: center;
-  }
-  .flex-col:hover,
-  td:hover,
-  .column-col:hover,
-  .grid-col:hover {
-    opacity: 0.75;
-    background-color: black;
-    color: white;
-  }
-  .flex,
-  .column,
-  .grid {
-    border-right: 1px solid #333;
-  }
-
-  .col-head {
-    display: block;
-    padding: 5px;
-    border-bottom: 1px solid #333;
-    text-align: center;
-  }
-
-  img {
-    padding: 0.25rem;
-  }
-
-  .data {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
-  .col-head,
-  th {
-    font-weight: 700;
-    font-size: 1rem;
-    background-color: black;
-    color: white;
-  }
-
-  .forecast {
-    display: block;
-    text-align: center;
-  }
-
-  .article-text {
-    grid-column: 1/3;
-  }
-
-  .article {
-    width: 250px;
-    height: auto;
-    grid-column: 3/4;
-  }
-
-  /* Desktop Views ****************************/
-  @media only screen and (min-width: 60em) {
-    h1 {
-      font-size: 2rem;
-    }
-    nav a {
-      font-size: 1.1rem;
-    }
-
-    .pic1 {
-      width: 760px;
-      height: auto;
-    }
-  }
-}
+/* Desktop Views ****************************/
