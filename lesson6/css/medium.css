@@ -159,4 +159,9 @@
     width: 200px;
     height: 150px;
   }
+
+  .hero-image2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }

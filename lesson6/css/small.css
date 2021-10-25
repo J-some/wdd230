@@ -4,13 +4,13 @@ img {
   margin: 0.5rem;
 }
 
-.banner .hero-image {
+.hero-image {
   width: 100%;
 }
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
 }
 
