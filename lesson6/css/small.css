@@ -4,6 +4,30 @@ img {
   margin: 0.5rem;
 }
 
+.header-page {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+.header-image {
+  grid-column: 1;
+}
+
+.h1-header {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.header-text {
+  grid-column: 2/4;
+  grid-row: 2;
+  margin-top: 0%;
+}
+
+.nav-menu {
+  text-align: center;
+}
+
 .hero-image {
   width: 100%;
 }
