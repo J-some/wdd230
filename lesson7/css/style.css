@@ -1,0 +1,20 @@
+header {
+  background-color: #83bcff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+body {
+  max-width: 767px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2rem;
+  font-family: "Bangers", cursive;
+}
+
+picture {
+  display: block;
+  text-align: center;
+}
