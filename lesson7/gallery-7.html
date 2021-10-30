@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery page activity</title>
+    <meta
+      name="description"
+      content="This is the seventh assigment of the course WDD 230"
+    />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header-page">
+      <h1 class="h1-header">Twister Weather</h1>
+      <img
+        class="header-image"
+        src="../lesson3/images/twister-weather.png"
+        alt="twister-weather logo"
+      />
+      <p class="header-text">"The real weather for your best days"</p>
+    </header>
+    <nav class="nav-menu">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../lesson6/preston-6.html">Preston</a>
+        </li>
+        <li>
+          <a href="#">Soda Springs</a>
+        </li>
+        <li>
+          <a href="#">Fish Haven</a>
+        </li>
+        <li>
+          <a href="#">Storm Center</a>
+        </li>
+        <li class="active">
+          <a href="gallery-7.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Gallery</h2>
+      <div class="pic-gallery">
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/1.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>A women looking to the windy mountains</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/2.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>Air baloon flying on windy mountains</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/3.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>Man enjoyng the shining sunrise</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/4.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>A cloudy route</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/5.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>The sun on the ocean</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/6.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>The sunny sunset</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/7.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>The hot mountains</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/8.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>Snow on the trees</p>
+        </div>
+        <div class="pic-conteiner">
+          <picture>
+            <img data-src="images/9.jpg" src="images/placeholder.png" />
+          </picture>
+          <p>Snow pathway</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      &copy; 2021 | Jonathan Somephikhay | Argentina |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <br />
+      Current day: <span id="currentdate"></span>
+      <script src="js/scriptDate.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script-gallery.js"></script>
+  </body>
+</html>

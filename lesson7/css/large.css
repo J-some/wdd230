@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .pic1 {
+    width: 760px;
+    height: auto;
+  }
+  /*Lesson 7*/
+  .pic-conteiner:hover {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 2px 2px 2px 2px;
+  }
+  .pic-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+  }
+}
