@@ -31,3 +31,45 @@ imagesToload.forEach((image) => {
 });
 
 //time visits
+
+actualDate = new Date();
+timeBetweenP = document.getElementById("user-Visits");
+
+let lastVisit = localStorage.getItem("lastVisit");
+
+if (lastVisit == null) {
+  localStorage.setItem("lastVisit", actualDate);
+  lastVisit = localStorage.getItem("lastVisit");
+
+  let lastVisitDate = new Date(lastVisit);
+
+  calculateTimePassed(actualDate, lastVisitDate);
+} else {
+  let lastVisitDate = new Date(lastVisit);
+
+  calculateTimePassed(actualDate, lastVisitDate);
+}
+
+function calculateTimePassed(actualDate, lastVisitDate) {
+  let timeBetween = actualDate - lastVisitDate;
+  let timeBetweenInMinutes = timeBetween / (1000 * 60);
+  let timeBetweenInHours = timeBetweenInMinutes / 60;
+  let timeBetweenInDays = timeBetweenInHours / 24;
+  let timeBetweenInWeeks = timeBetweenInDays / 7;
+  let timeBetweenInMonths = timeBetweenInWeeks / 4;
+  let timeBetweenInYears = timeBetweenInMonths / 12;
+
+  if (timeBetweenInDays < 7) {
+    timePast = Math.round(timeBetweenInDays) + " days ago";
+  } else if (timeBetweenInWeeks < 4) {
+    timePast = Math.round(timeBetweenInWeeks) + " weeks ago";
+  } else if (timeBetweenInMonths < 12) {
+    timePast = Math.round(timeBetweenInMonths) + " months ago";
+  } else if (timeBetweenInYears < 10) {
+    timePast = Math.round(timeBetweenInYears) + " years ago";
+  }
+
+  timeBetweenP.innerHTML = "You visited this page " + timePast;
+
+  localStorage.setItem("lastVisit", actualDate);
+}
