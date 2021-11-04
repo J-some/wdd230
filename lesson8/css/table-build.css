@@ -24,8 +24,7 @@ thead tr,
   background-color: #6d9bb8;
   color: #ffffff;
 }
-thead tr,
-th,
+thead tr:first-child th,
 tfoot tr td {
   background-color: #7fb9c2;
   font-size: 24px;
@@ -34,7 +33,7 @@ tfoot tr td {
 tbody tr {
   background-color: #e8eeec;
 }
-tbody tr {
+tbody tr:nth-child(even) {
   background-color: #ddf1e2;
 }
 tfoot tr td {
