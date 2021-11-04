@@ -24,7 +24,7 @@ thead tr,
   background-color: #6d9bb8;
   color: #ffffff;
 }
-thead tr:th,
+thead tr:first-child th,
 tfoot tr td {
   background-color: #7fb9c2;
   font-size: 24px;
