@@ -60,16 +60,16 @@ function calculateTimePassed(actualDate, lastVisitDate) {
   let timeBetweenInYears = timeBetweenInMonths / 12;
 
   if (timeBetweenInDays < 7) {
-    timePast = Math.round(timeBetweenInDays) + " days ago";
+    timePast = Math.round(timeBetweenInDays) + " days";
   } else if (timeBetweenInWeeks < 4) {
-    timePast = Math.round(timeBetweenInWeeks) + " weeks ago";
+    timePast = Math.round(timeBetweenInWeeks) + " weeks";
   } else if (timeBetweenInMonths < 12) {
-    timePast = Math.round(timeBetweenInMonths) + " months ago";
+    timePast = Math.round(timeBetweenInMonths) + " months";
   } else if (timeBetweenInYears < 10) {
-    timePast = Math.round(timeBetweenInYears) + " years ago";
+    timePast = Math.round(timeBetweenInYears) + " years";
   }
 
-  timeBetweenP.innerHTML = "You visited this page " + timePast;
+  timeBetweenP.innerHTML = "Time passed from the last visit: " + timePast;
 
   localStorage.setItem("lastVisit", actualDate);
 }
