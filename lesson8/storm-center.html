@@ -63,10 +63,10 @@
     </nav>
     <main>
       <h2>Storm Center Activity Report</h2>
-      <form class="s-form" id="stormCenterForm">
+      <form>
         <fieldset>
           <legend>Personal Information</legend>
-          <div class="field">
+          <div>
             <label
               >Name
               <input
@@ -78,7 +78,7 @@
               />
             </label>
           </div>
-          <div class="field">
+          <div>
             <label
               >Email
               <input
@@ -88,7 +88,7 @@
               />
             </label>
           </div>
-          <div class="field">
+          <div>
             <label
               >Phone number
               <input
@@ -99,7 +99,7 @@
               />
             </label>
           </div>
-          <div class="field">
+          <div>
             <label
               >Zip Code
               <input
@@ -113,13 +113,13 @@
         </fieldset>
         <fieldset>
           <legend>Storm Data</legend>
-          <div class="field">
+          <div>
             <label
               >Storm date
               <input name="date" type="date" />
             </label>
           </div>
-          <div class="field">
+          <div>
             <label
               >Storm type
               <input list="storm-types" name="storm-type" />
@@ -132,7 +132,7 @@
               </datalist>
             </label>
           </div>
-          <div class="field">
+          <div>
             <label class="range" for="rating"
               >Storm Severity:
               <input
@@ -148,7 +148,7 @@
               <span id="ratingvalue">2</span>
             </label>
           </div>
-          <div class="field">
+          <div>
             <label
               >Storm region
               <select name="region" id="region">
@@ -159,31 +159,29 @@
               </select>
             </label>
           </div>
-          <div class="field radio-field">
+          <div>
             <p>User in-danger level</p>
 
-            <label class="label-block">
-              <input type="radio" name="inDanger" value="yes" />Yes
+            <label class="label-value">
+              <input type="radio" name="indanger" value="yes" />Yes
             </label>
-            <label class="label-block">
-              <input type="radio" name="inDanger" value="maybe" />Maybe
+            <label class="label-value">
+              <input type="radio" name="indanger" value="maybe" />Maybe
             </label>
-            <label class="label-block">
-              <input type="radio" name="inDanger" value="no" />No
-            </label>
-          </div>
-          <div class="field">
-            <label
-              >Comments
-              <textarea
-                name="comments"
-                placeholder="Additional Information"
-              ></textarea>
+            <label class="label-value">
+              <input type="radio" name="indanger" value="no" />No
             </label>
           </div>
+          <label
+            >Comments
+            <textarea
+              name="comments"
+              placeholder="Additional Information"
+            ></textarea>
+          </label>
         </fieldset>
 
-        <input type="submit" value="Submit Report" class="submitBtn" />
+        <input class="submit-button" type="submit" value="Submit Report" />
       </form>
     </main>
     <footer>
