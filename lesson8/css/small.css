@@ -203,6 +203,30 @@ nav ul.hide {
 
 /* Storm center*/
 
-.submit-button {
-  text-align: center;
+form input.submitButon {
+  border: none;
+  background-color: #0080ff;
+  padding: 1em 1em;
+  margin: 1em;
+}
+
+form .s-form {
+  display: block;
+  padding: 1em 0 0 0;
+  margin: 0;
+  color: #262228;
+}
+
+form label.s-form input,
+form label.s-form select,
+form textarea {
+  display: block;
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  max-width: 25em;
+}
+
+form legend {
+  font-size: 2em;
 }

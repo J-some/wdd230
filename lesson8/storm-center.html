@@ -62,12 +62,12 @@
       </ul>
     </nav>
     <main>
-      <h2>Storm Center Activity Report</h2>
-      <form>
+      <h1>Storm Center Activity Report</h1>
+      <form action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
           <div>
-            <label
+            <label class="s-form"
               >Name
               <input
                 type="text"
@@ -79,7 +79,7 @@
             </label>
           </div>
           <div>
-            <label
+            <label class="s-form"
               >Email
               <input
                 type="email"
@@ -89,7 +89,7 @@
             </label>
           </div>
           <div>
-            <label
+            <label class="s-form"
               >Phone number
               <input
                 type="tel"
@@ -100,7 +100,7 @@
             </label>
           </div>
           <div>
-            <label
+            <label class="s-form"
               >Zip Code
               <input
                 name="zipCode"
@@ -108,19 +108,19 @@
                 placeholder="Enter your zip code"
                 required
               />
-            </label>
+            </label class="s-form"> 
           </div>
         </fieldset>
         <fieldset>
           <legend>Storm Data</legend>
           <div>
-            <label
+            <label class="s-form"
               >Storm date
               <input name="date" type="date" />
             </label>
           </div>
           <div>
-            <label
+            <label class="s-form"
               >Storm type
               <input list="storm-types" name="storm-type" />
               <datalist id="storm-types">
@@ -149,7 +149,7 @@
             </label>
           </div>
           <div>
-            <label
+            <label class="s-form"
               >Storm region
               <select name="region" id="region">
                 <option selected disabled>Select Region ...</option>
@@ -172,7 +172,7 @@
               <input type="radio" name="indanger" value="no" />No
             </label>
           </div>
-          <label
+          <label class="s-form"
             >Comments
             <textarea
               name="comments"
@@ -181,7 +181,7 @@
           </label>
         </fieldset>
 
-        <input class="submit-button" type="submit" value="Submit Report" />
+        <input class="submitButon" type="submit" value="Submit Report" />
       </form>
     </main>
     <footer>
