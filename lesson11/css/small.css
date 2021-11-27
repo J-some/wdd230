@@ -217,3 +217,18 @@ nav ul.hide {
 .lesson-9 img {
   width: 230px;
 }
+
+/*soda springs*/
+
+.events {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  background-color: rgba(240, 240, 240, 0.8);
+  margin: 1em 2em;
+  padding: 1em;
+}
+
+.hero-image2 {
+  width: 300px;
+}
