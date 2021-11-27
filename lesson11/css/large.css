@@ -1,0 +1,31 @@
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .pic1 {
+    width: 760px;
+    height: auto;
+  }
+
+  /*lesson 9*/
+  .lesson-9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+  }
+
+  .lesson-9 img {
+    width: 230px;
+  }
+
+  .lesson-9 section {
+    border: 1px solid #051824;
+    box-shadow: 1px 1px 5px #010b11;
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
