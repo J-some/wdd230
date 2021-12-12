@@ -1,0 +1,44 @@
+body {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+}
+
+header,
+footer {
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+header {
+  padding: 1.5rem;
+}
+
+#currentdate {
+  color: blue;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  box-shadow: 0 0 30px black;
+}
+
+h2 {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+}
