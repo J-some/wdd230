@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of commerce Home Page</title>
+    <meta
+      name="description"
+      content="This is the chamber of commerce assigment of the course WDD 230"
+    />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header-page">
+      <div id="bann" class="banne">
+        "Saturday = Preston Pancakes in the Park! 9:00 a.m Saturday at the city
+        park pavilion."
+      </div>
+      <script type="text/javascript" src="js/banner.js"></script>
+      <h1 class="h1-header">San Nicolas de los Arroyos City</h1>
+      <img
+        class="header-image"
+        src="images/icon.jpg"
+        alt="San Nicolas logo"
+      />
+      <p class="header-text">"Looking foward for a better city"</p>
+    </header>
+    <nav class="nav-menu">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="../lesson10/preston-10.html">City</a>
+        </li>
+        <li>
+          <a href="sodasprings.html">Join</a>
+        </li>
+        <li>
+          <a href="fish-haven.html">Directory</a>
+        </li>
+        <li>
+          <a href="../lesson8/storm-center.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <picture class="hero-image2">
+        <source
+          media="(min-width: 600px) and (max-width: 900px)"
+          srcset="images/hero-medium.jpg"
+        />
+        <source media="(min-width: 900px)" srcset="images/hero-image.jpg" />
+        <img
+          class="hero-image"
+          src="images/hero-small.jpg"
+          alt="Hero image"
+        />
+      </picture>
+      <h1>Testing website</h1>
+      <section class="lesson-9"></section>
+      <div class="article-position">
+        <h2 class="article-title">An underwater mystery on Canada's coast</h4>
+        <h3 class="article-author">By Diane Selkirk</h5>
+        <p class="article-text">
+          At the lowest tides, Canada's Comox estuary exposes a nearly forgotten
+          story: the nubs of more than 150,000 wooden stakes are spread out
+          across the intertidal zone, forming the remnants of hundreds of
+          ancient fish traps. At peak use, it's believed the industrial-level
+          installation provided food security for an estimated 10,000-12,000
+          K'ómoks People, the traditional inhabitants of the bountiful,
+          mountain-fringed Comox Valley, located on the east side of Vancouver
+          Island on the edge of the Salish Sea. Until recently, the
+          sophisticated technology had been overlooked by Western science. Even
+          though the stakes, which are thumb-sized in diameter in the shallows
+          and increase to the size of small tree trunks in deeper water, are
+          visible from busy shore-side roads, no-one thought much about them.
+          For Cory Frank, manager of the K'ómoks Guardian Watchmen, a role that
+          oversees all aspects of environmental stewardship for the coastal
+          Nation, the stakes were just something he grew up with, playing and
+          fishing among them at low tide.
+        </p>
+        <img class="article" src="images/article.jpg" alt="article" />
+      </div>
+      <div class="information">
+        <img class="tablet-map" src="images/tablet-map.jpg" alt="map" />
+        <div class="contact-infomation">
+          <h3>Contact Information:</h3>
+          <p>Phone number: +549 3364 281227</p>
+          <p>Email: somearg@byui.edu</p>
+          <div class="social">
+            <a href="https://es-la.facebook.com/" target="_blank"
+              ><img
+                class="social-icon"
+                src="images/facebook.png"
+                alt="facebook icon"
+            /></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+              ><img
+                class="social-icon"
+                src="images/instagram.png"
+                alt="instagram icon"
+              />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img
+                class="social-icon"
+                src="images/youtube.png"
+                alt="youtube icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      &copy; 2021 | Jonathan Somephikhay | Argentina |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <br />
+      Current day: <span id="currentdate"></span>
+      <script src="js/scriptDate.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/windchild.js"></script>
+    <script src="js/data-town.js"></script>
+  </body>
+</html>

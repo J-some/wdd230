@@ -100,7 +100,7 @@ img {
 
 body {
   font-size: 16px;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Ubuntu", cursive;
 }
 
 ul li {
@@ -127,7 +127,7 @@ ul li {
 /* phone or baseline views **************************/
 header,
 footer {
-  background-color: #83bcff;
+  background-color: #b7bfb0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -150,10 +150,10 @@ footer {
 }
 h1 {
   font-size: 4rem;
-  font-family: "Bangers", cursive;
+  font-family: "Raleway", cursive;
 }
 nav {
-  background-color: #36454f;
+  background-color: #3772ff;
   text-align: left;
   box-shadow: 0 2px 15px gray;
 }
