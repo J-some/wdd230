@@ -54,7 +54,80 @@
         </li>
       </ul>
     </nav>
-    <main><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></main>
+    <main>
+      <h1>Our city</h1>
+      <picture class="hero-image2">
+        <source
+          media="(min-width: 600px) and (max-width: 900px)"
+          srcset="images/hero-image-medium.jpg"
+        />
+        <source media="(min-width: 900px)" srcset="images/hero-image.jpg" />
+        <img
+          class="hero-image"
+          src="images/hero-image-small.jpg"
+          alt="Hero image"
+        />
+      </picture>
+      <div class="article-position">
+        <h2 class="article-title">San Nicolas de los Arroyos</h2>
+        <h3 class="article-author">Paseo costanero</h3>
+        <p class="article-text">
+          San Nicolás de los Arroyos (also referred to simply as San Nicolás) is
+          an Argentine city, head of the San Nicolás party. It is located in the
+          extreme north of the Province of Buenos Aires, on the Paraná River and
+          on the side of the Buenos Aires - Rosario Highway. It is located 234
+          km from the Autonomous City of Buenos Aires, 72 km from Pergamino and
+          69 km from Rosario. Its road accesses are km 231 of National Route 9
+          (Rosario - Buenos Aires highway) in a north-south direction. Route 188
+          in an east-west direction connects it with the Pacific Ocean corridor
+          Route 9. On the side of the highway (RN 9) is "El Parador" of buses.
+          On the other hand, it is crossed by the General Miter railway,
+          operated by the Nuevo Central Argentino company, in a north-south
+          direction. The city has a bus terminal station; and loading-unloading
+          with railways at the foot of cranes of the Paraná waterway, with an
+          important port at km 243, which serves the industrial and cereal
+          industry.
+        </p>
+        <img class="article" src="images/costanera.jpg" alt="costanera" />
+      </div>
+      <div class="article-position">
+        <h2 class="article-title">Upcoming events of the city:</h2>
+        <h3 class="article-author">Come and enjoy with us!</h3>
+        <img class="article-1" src="images/eco-parque-1.jpg" alt="eco parque" />
+        <img class="article-2" src="images/navidad.jpg" alt="navidad" />
+        <img
+          class="article-3"
+          src="images/luces-navidad.jpg"
+          alt="luces de navidad"
+        />
+      </div>
+      <form action="request.html">
+        <fieldset>
+          <legend>Do you have any questions?</legend>
+          <div>
+            <label class="s-form"
+              >Name
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                pattern="[A-Za-z\s]{5,20}"
+                required
+              />
+            </label>
+          </div>
+          <label class="s-form"
+            >What is your question?
+            <textarea
+              name="comments"
+              placeholder="Write your question.."
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <input class="submitButon" type="submit" value="Submit Form" />
+      </form>
+    </main>
     <footer>
       &copy; 2021 |Chamber of commerce - Jonathan Somephikhay | WDD 230
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>

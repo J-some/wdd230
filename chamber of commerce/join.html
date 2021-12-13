@@ -59,8 +59,34 @@
       </ul>
     </nav>
     <main>
-      <h1>Storm Center Activity Report</h1>
-      <form action="thanks.html">
+      <h1>Why Join Us?</h1>
+      <div>
+        <h2>The 7 benefits to join the Chamber of Commerce:</h2>
+        <ol>
+            <li>Networking opportunities</li>
+            <li>Gain a voice in the Municipality</li>
+            <li>Make business contacts</li>
+            <li>Receive discounts for being a membership</li>
+            <li>Get customer referrals</li>
+            <li>Bring new customers to your business</li>
+            <li>Increase your influence in the community</li>
+            
+        </ol>
+      </div>
+      <div>
+        <h2>Membership Benefits by Level</h2>
+        <p>
+            <h3>$100 - Non-profit Level:</h3>
+            Ideal for new businesses and small business.
+            <h3>$200 - Bronze Level:</h3>
+            Ideal for businesses with a few employees and medium business.
+            <h3>$400 - Silver Level</h3>
+            Recommended for businesses with more than 2 branches. Provides some business trainings and social media posts.
+            <h3>$1,000 - Gold Level</h3>
+            Recommended for businesses with more than 3 branches, this membership provides full business trainings, social media posts, luncheon tickets, sponsorships with levels of advertising, etc.
+      </div>
+      <br>
+      <form action="membership.html">
         <fieldset>
           <legend>Personal Information</legend>
           <div>
@@ -109,68 +135,53 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Storm Data</legend>
+          <legend>Business Information </legend>
           <div>
             <label class="s-form"
-              >Storm date
-              <input name="date" type="date" />
-            </label>
-          </div>
-          <div>
-            <label class="s-form"
-              >Storm type
-              <input list="storm-types" name="storm-type" />
-              <datalist id="storm-types">
-                <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
-              </datalist>
-            </label>
-          </div>
-          <div>
-            <label class="range" for="rating"
-              >Storm Severity:
+              >Bussines Name
               <input
-                type="range"
-                id="rating"
-                value="2"
-                min="1"
-                max="10"
-                step="1"
-                oninput="adjustRating(this.value)"
-                onchange="adjustRating(this.value)"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                pattern="[A-Za-z\s]{5,20}"
+                required
               />
-              <span id="ratingvalue">2</span>
             </label>
           </div>
           <div>
             <label class="s-form"
-              >Storm region
+              >Bussiness Address
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your adress"
+                pattern="[A-Za-z\s]{5,20}"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label class="s-form" for="url">Enter your website URL: </label>
+            <input type="url" name="website" id="url" placeholder="http://example.com">
+          </div>
+          <div>
+            <label class="s-form" for="text-area">Business Description</label>
+            <textarea class="descriptionBox" id="text-area" name="user_description"></textarea>
+          </div>
+          <div>
+            <label class="s-form"
+              >Select your membership Level
               <select name="region" id="region">
-                <option selected disabled>Select Region ...</option>
-                <option value="preston">Preston</option>
-                <option value="sodaSprings">Soda Springs</option>
-                <option value="fishHaven">Fish Haven</option>
+                <option selected disabled>Select membership level..</option>
+                <option value="100">Non-profit-level</option>
+                <option value="200">Bronze-Level</option>
+                <option value="400">Silver-Level</option>
+                <option value="1000">Gold-Level</option>
               </select>
             </label>
-          </div>
-          <div>
-            <p>User in-danger level</p>
-
-            <label class="label-value">
-              <input type="radio" name="indanger" value="yes" />Yes
-            </label>
-            <label class="label-value">
-              <input type="radio" name="indanger" value="maybe" />Maybe
-            </label>
-            <label class="label-value">
-              <input type="radio" name="indanger" value="no" />No
-            </label>
-          </div>
+        </div>
           <label class="s-form"
-            >Comments
+            >Additional Information
             <textarea
               name="comments"
               placeholder="Additional Information"

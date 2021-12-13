@@ -51,53 +51,50 @@ img {
   padding: 1em;
 }
 
-.information {
+.hot-deal {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 1em 2em;
+  padding: 1em;
+}
+.article-position {
+  grid-column: 1;
+  grid-row: 1;
   background-color: rgba(240, 240, 240, 0.8);
   margin: 1em 2em;
   padding: 1em;
-  grid-column: 1;
-  grid-row: 1;
 }
-
-.tablet-map {
+.article-1 {
   width: 250px;
   height: auto;
-}
-
-.contact-infomation {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.article-position {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: rgba(240, 240, 240, 0.8);
-  margin: 1em 2em;
-  padding: 1em;
-}
-
-.article-title {
-  grid-column: 1;
-  grid-row: 1;
-}
-.article-author {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.article-text {
   grid-column: 1;
   grid-row: 3;
 }
 
-.article {
+.article-2 {
   width: 250px;
   height: auto;
   grid-column: 1;
   grid-row: 4;
+}
+.article-3 {
+  width: 250px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 5;
+}
+.information {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgba(240, 240, 240, 0.8);
+  margin: 1em 2em;
+  padding: 1em;
+}
+
+.contact-infomation {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 body {
