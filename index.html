@@ -45,32 +45,72 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="../lesson10/preston-10.html">City</a>
+          <a href="chamber of commerce/city.html">City</a>
         </li>
         <li>
-          <a href="sodasprings.html">Join</a>
+          <a href="chamber of commerce/join.html">Join</a>
         </li>
         <li>
-          <a href="fish-haven.html">Directory</a>
+          <a href="chamber of commerce/directory.html">Directory</a>
         </li>
         <li>
-          <a href="../lesson8/storm-center.html">Contact</a>
+          <a href="chamber of commerce/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
     <main>
-      <picture class="hero-image2">
-        <source
-          media="(min-width: 600px) and (max-width: 900px)"
-          srcset="images/hero-medium.jpg"
-        />
-        <source media="(min-width: 900px)" srcset="images/hero-image.jpg" />
-        <img
-          class="hero-image"
-          src="images/hero-small.jpg"
-          alt="Hero image"
-        />
-      </picture>
+      <div class="banner">
+        <picture class="hero-image2">
+          <source
+            media="(min-width: 600px) and (max-width: 900px)"
+            srcset="images/hero-image-medium.jpg"
+          />
+          <source media="(min-width: 900px)" srcset="images/hero-image.jpg" />
+          <img
+            class="hero-image"
+            src="images/hero-image-small.jpg"
+            alt="Hero image"
+          />
+        </picture>
+        <div class="action">
+          <h3>Weather Information</h3>
+          <ul>
+            <li>Current temp: <span id="currently"></span>°F</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Current condition: <span id="condition"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="forecast">3 day Forecast</h3>
+        <div class="flex">
+          <div class="flex-col">
+            <span class="col-head" id="dayofweek1"></span>
+            <div>
+              <span id="imagesrc1"></span>
+              <img src="img1" alt="forecast-img" id="icon1" />
+            </div>
+            <div><span id="forecast1"></span>°F</div>
+          </div>
+          <div class="flex-col">
+            <span class="col-head" id="dayofweek2"></span>
+            <div>
+              <span id="imagesrc2"></span>
+              <img src="img2" alt="forecast-img-2" id="icon2" />
+            </div>
+            <div><span id="forecast2"></span>°F</div>
+          </div>
+          <div class="flex-col">
+            <span class="col-head" id="dayofweek3"></span>
+            <div>
+              <span id="imagesrc3"></span>
+              <img src="img3" alt="forecas-img-3" id="icon3" />
+            </div>
+            <div><span id="forecast3"></span>°F</div>
+          </div>
+   
+        </div>
+      </div>
       <h2>Purposes and Goals</h2>
       <p>The purpose of this site is to support local business, provide tools for people to find the 
         best attractions in the city and help our customers become a positive influence in our 
@@ -80,6 +120,9 @@
         <li>Provide resources to the city in order to increase new visitors.</li>
         <li>Foster our members gain new experiences and opportunities.</li>
         </p>
+        <form action="./chamber of commerce/join.html">
+          <input class="submitButon" type="submit" value="Join" />        
+        </form>
       <section class="lesson-9"></section>
       <div class="article-position">
         <h2 class="article-title">An underwater mystery on Canada's coast</h4>
@@ -135,7 +178,7 @@
       </div>
     </main>
     <footer>
-      &copy; 2021 | Jonathan Somephikhay | Argentina |
+      &copy; 2021 |Chamber of commerce - Jonathan Somephikhay | WDD 230
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>
       <br />
       Current day: <span id="currentdate"></span>
@@ -145,5 +188,6 @@
     <script src="js/webfontload.js"></script>
     <script src="js/windchild.js"></script>
     <script src="js/data-town.js"></script>
+    <script src="js/sn-weather.js"></script>
   </body>
 </html>
