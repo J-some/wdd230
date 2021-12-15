@@ -34,21 +34,9 @@ img {
   width: 100%;
 }
 
-.banner {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-}
-
 .social-icon {
   width: 50px;
   height: auto;
-}
-
-.banne {
-  background-color: rgb(237, 240, 52);
-  margin: 1em 2em;
-  padding: 1em;
 }
 
 .hot-deal {

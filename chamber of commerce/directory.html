@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chamber of commerce Home Page</title>
+    <title>Chamber of commerce directory Page</title>
     <meta
       name="description"
       content="This is the chamber of commerce assigment of the course WDD 230"
@@ -25,10 +25,6 @@
   </head>
   <body>
     <header class="header-page">
-      <div id="bann" class="banne">
-        "Saturday = Preston Pancakes in the Park! 9:00 a.m Saturday at the city
-        park pavilion."
-      </div>
       <script type="text/javascript" src="js/banner.js"></script>
       <h1 class="h1-header">San Nicolas de los Arroyos City</h1>
       <img class="header-image" src="images/icon.jpg" alt="San Nicolas logo" />
@@ -54,18 +50,24 @@
         </li>
       </ul>
     </nav>
-    <main><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></main>
+    <main><br /><br /><br /><br /><br /><br /><br /></main>
     <footer>
-      &copy; 2021 |Chamber of commerce - Jonathan Somephikhay | WDD 230
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      &copy; 2021 |Chamber of commerce - Jonathan Somephikhay | WDD 230 <br />
+      <p>Sources:</p>
+      <a href="https://es-la.facebook.com/SNciudad/"
+        >Municipalidad de San Nicolas</a
+      >
+      <a href="https://es.wikipedia.org/wiki/San_Nicol%C3%A1s_de_los_Arroyos"
+        >City information</a
+      >
+      <a href="https://openweathermap.org/">Open Weather</a>
       <br />
       Current day: <span id="currentdate"></span>
       <script src="js/scriptDate.js"></script>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/windchild.js"></script>
-    <script src="js/data-town.js"></script>
+    <script src="js/fetch.js"></script>
     <script src="js/sn-weather.js"></script>
   </body>
 </html>
