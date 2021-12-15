@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "Company name": "Crico",
+    "Contact information": "3364-123456",
+    "email": "Crico@gmail.com"
+  },
+  {
+    "id": 2,
+    "Company name": "Carniceria el Loko",
+    "Contact information": "3364-241587",
+    "email": "elloco@gmail.com"
+  },
+  {
+    "id": 3,
+    "Company name": "Helados quintana",
+    "Contact information": "3364-241228",
+    "email": "Sincere@april.biz"
+  },
+  {
+    "id": 4,
+    "Company name": "Alfin Jeans",
+    "Contact information": "3364-154878",
+    "email": "alfin@gmail.com"
+  },
+  {
+    "id": 5,
+    "Company name": "Ferreteria Davo",
+    "Contact information": "3364-152416",
+    "email": "davo@gmail.com"
+  },
+  {
+    "id": 6,
+    "Company name": "Sanitarios Lagorio",
+    "Contact information": "3364-587896",
+    "email": "lagorio@gmail.com"
+  },
+  {
+    "id": 7,
+    "Company name": "Venta matt",
+    "Contact information": "3364-898785",
+    "email": "matt@gmail.com"
+  }
+  
+]
